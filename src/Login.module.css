@@ -1,0 +1,160 @@
+.main {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+
+.inputs-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+    position: relative;
+    ;
+}
+
+.err-msg-div {
+    font-size: 13px;
+    color: rgba(255, 109, 72, 0.938);
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 14px;
+
+
+    box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.07);
+}
+
+/* Input textfield border */
+.form input {
+    /* border: none; */
+    margin-top: 0cm;
+    border: solid 1px rgb(221, 218, 218);
+    border-radius: 10px;
+    outline: none;
+    padding: 3.5%;
+    /* padding-bottom: .25rem; */
+    font-size: 15px;
+    font: rgb(236, 231, 231);
+    margin-bottom: .5cap;
+}
+/* Input textfield border */
+
+.form input:focus {
+    border-bottom: solid 1px rgb(80, 80, 80);
+}
+
+.form button {
+    /* padding-top: .7rem;
+    padding-bottom: .7rem; */
+    padding: 3%;
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    margin-top: 4cap;
+    margin-bottom: 3cap;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: rgb(84, 216, 155);
+    color: azure;
+    font-weight: bold;
+}
+
+.form button:hover {
+    transform: .2s;
+    background-color: rgb(118, 240, 177);
+}
+
+.heading {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.subheading {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.p-link {
+    /* margin: auto; */
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 14px;
+    list-style: armenian;
+}
+
+.link:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Heading Image */
+/* .user-image {
+    align-self: center;
+    background-color: #f0f0f0;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    border-radius: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+} */
+
+/* .head {
+    
+    height: 40px;
+    width: 40px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+} */
+
+/* .body {
+    margin-bottom: -35px;
+    height: 70px;
+    width: 70px;
+    background-color: #cfcfcf;
+    border-radius: 30%;
+} */
+/* Heading Image */
+
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+    color: rgb(84, 216, 155);
+    text-decoration: none;
+    
+}
+
+.alignright:hover {
+    color : rgb(20, 176, 106);
+    font-weight: bold;
+}
+
+.required-field::after {
+    content: " *";
+    color: red;
+    /* margin-bottom: 0cap;
+    margin-top: 5cap; */
+  }
+
+
+::placeholder {
+    color: rgb(190, 189, 189);
+    opacity: 1; /* Firefox */
+  }
